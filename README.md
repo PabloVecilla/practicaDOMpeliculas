@@ -2,6 +2,10 @@
 
 Aplicación web desarrollada con **HTML, CSS y JavaScript** para gestionar un pequeño catálogo de películas mediante un formulario y una tabla dinámica.
 
+## Demo
+
+[Ver aplicación en GitHub Pages](https://pablovecilla.github.io/practicaDOMpeliculas/)
+
 El proyecto permite:
 
 - añadir películas
