@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/152aeb70f6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Ingresa películas</h1>
+    <section class="formulario">
+        <form action="">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="anio">Año</label>
+            <input type="number" id="anio" name="anio" required min="1800" max="2026">
+
+            <label for="desc">Sinopsis</label>
+            <textarea name="desc" id="desc"  required></textarea>
+
+            <label for="url">URL del póster</label>
+            <input type="url" name="url" id="url"  required>
+
+            <label for="gen">Género</label>
+            <select name="gen" id="gen"  required>
+                <option value="terror">Terror</option>
+                <option value="accion">Acción</option>
+                <option value="comedia">Comedia</option>
+                <option value="romantica">Romántica</option>
+                <option value="drama">Drama</option>
+            </select>
+
+            <button id="boton-anadir-peli">Submit</button>
+        </form>
+    </section>
+
+    <section class="filtros">
+        <h2>Filtros</h2>
+        <div class="contenedor-filtro-generos">
+            <label for="filtro-genero">Filtra por género</label>
+            <select name="filtro-genero" id="filtro-genero">
+                <option value="" selected>Sin filtro de género</option>
+                <option value="terror">Terror</option>
+                <option value="accion">Acción</option>
+                <option value="comedia">Comedia</option>
+                <option value="romantica">Romántica</option>
+                <option value="drama">Drama</option>
+            </select>
+        </div>
+
+        <div class="contenedor-filtro-texto">
+            <input type="text" id="filtro-texto" placeholder="Busca películas por título, sinopsis o año">
+        </div>
+    </section>
+
+    <section class="tabla">
+        <h2>Tabla de películas</h2>
+        <table id="tabla-peliculas">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Año</th>
+                    <th>Sinopsis</th>
+                    <th>Póster</th>
+                    <th>Género</th>
+                </tr>
+            </thead>
+            <tbody><!-- contenido generado en JS --></tbody>
+        </table>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html> 
